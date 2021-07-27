@@ -2,7 +2,7 @@
 <h1 id="contactsHeading">Get In Touch</h1>
 <div id="contactsContainer">
 
-    <form [formGroup]="contactForm" (ngSubmit)="emailForm()">
+    <form [formGroup]="contactForm" (ngSubmit)="emailForm(contactForm.value)">
 
         <div class="form-group">
             <label class="control-label">Name:</label>
