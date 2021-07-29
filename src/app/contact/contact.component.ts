@@ -37,11 +37,10 @@ export class ContactComponent implements OnInit {
     );
   }
 
-  emailForm() {
-    const formData = new FormData();
-    formData.append('name', this.contactForm.get('name').value);
-    formData.append('email', this.contactForm.get('email').value);
-    formData.append('message', this.contactForm.get('message').value);
+  emailForm(formData) {
+    // formData.append('name', this.contactForm.get('name').value);
+    // formData.append('email', this.contactForm.get('email').value);
+    // formData.append('message', this.contactForm.get('message').value);
 
     this.contact.postMessage(formData).subscribe
       (response => {
